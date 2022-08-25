@@ -83,7 +83,7 @@ app.get('/', async (req, res) => {
         fs.writeFile('json/product.json', json, function (err) {
             if (err) res.status(400).send({
                 status: false,
-                body: 'There was a failure to save the json file\n'
+                body: 'There was a failure to save the json file'
             })
         });
 
